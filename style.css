@@ -1,0 +1,34 @@
+.card{
+    position: relative;
+    width: 24rem;
+    height: 34rem;
+    background-size: cover;
+    background-image: url(Coconut.jpg);
+    background-clip: content-box;
+    border-radius: 20px;
+    background-position: center center;
+    overflow: hidden;
+}
+.innercard{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    padding: 2rem 1.3rem 2rem 2rem;
+    transition: all 0.5s ease 0s;
+}
+
+.card:hover .innercard{
+    opacity: 1;
+}
+
+.innercard p{
+    height: 85%;
+    padding-right: 1rem;
+    margin-top: 1.5rem;
+}
